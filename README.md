@@ -126,7 +126,7 @@ build-dataset-generation-tool/
 1. Clone or navigate to the project folder:
 
    ```bash
-   cd "build-dataset-generation-tool (1)"
+   git clone https://github.com/YRMESHRAM/AI_Dataset_Labeling.git
    ```
 
 2. Install dependencies:
