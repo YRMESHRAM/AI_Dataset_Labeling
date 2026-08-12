@@ -32,7 +32,7 @@ export default function AboutPage({ darkMode }: Props) {
   ];
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.25rem 1rem 5rem' }}>
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.25rem 1rem 2.5rem' }}>
       {/* Header */}
       <div className="animate-fadeIn" style={{ marginBottom: '2rem', textAlign: 'center' }}>
         <div style={{ background: 'linear-gradient(135deg, #2563eb, #06b6d4)', width: '60px', height: '60px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', margin: '0 auto 1.25rem', boxShadow: '0 6px 25px rgba(37,99,235,0.3)' }}>
@@ -116,12 +116,6 @@ export default function AboutPage({ darkMode }: Props) {
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="animate-fadeIn delay-400" style={{ opacity: 0, textAlign: 'center', padding: '1.5rem 1rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-        <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.3rem' }}>
-          Built with <Heart size={14} style={{ color: '#ef4444' }} fill="#ef4444" /> for AI & ML
-        </p>
-      </div>
     </div>
   );
 }

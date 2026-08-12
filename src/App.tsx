@@ -166,6 +166,8 @@ export default function App() {
     <div
       style={{
         minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
         background: 'var(--bg)',
         color: 'var(--text)',
         transition: 'background 0.3s ease, color 0.3s ease',
@@ -218,24 +220,50 @@ export default function App() {
       )}
 
       {/* Page content */}
-      <main>{renderPage()}</main>
+      <main style={{ flex: 1 }}>{renderPage()}</main>
 
-      {/* Footer — hidden on mobile since bottom tab bar is there */}
+      {/* Footer */}
       {currentPage !== 'landing' && (
         <footer
-          className="hidden md:block"
           style={{
-            textAlign: 'center',
-            padding: '1.25rem 1.5rem',
+            marginTop: 'auto',
             borderTop: '1px solid var(--border)',
-            color: 'var(--text-secondary)',
-            fontSize: '0.75rem',
             background: 'var(--bg-card)',
+            color: 'var(--text-secondary)',
+            fontSize: '0.8rem',
+            padding: '1.25rem 1.5rem',
+            transition: 'all 0.3s ease',
           }}
+          className="pb-16 md:pb-5"
         >
-          <p>
-            © {new Date().getFullYear()} Automated Dataset Generation Tool — AI-Powered with MobileNet
-          </p>
+          <div
+            style={{
+              maxWidth: '1200px',
+              margin: '0 auto',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '0.75rem',
+            }}
+            className="sm:!flex-row"
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textAlign: 'center' }}>
+              <span>© {new Date().getFullYear()} Automated Dataset Generation Tool</span>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                fontSize: '0.75rem',
+                color: 'var(--text-secondary)',
+                opacity: 0.85,
+              }}
+            >
+              <span>AI-Powered with MobileNet v2 & TensorFlow.js</span>
+            </div>
+          </div>
         </footer>
       )}
     </div>

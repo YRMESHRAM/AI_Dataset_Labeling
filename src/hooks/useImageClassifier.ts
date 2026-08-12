@@ -1,12 +1,3 @@
-/* ========================================
-   useImageClassifier Hook
-   Loads TensorFlow.js MobileNet model and
-   provides image classification capabilities.
-   
-   The model runs entirely in the browser —
-   no server or API key required.
-   ======================================== */
-
 import { useState, useCallback, useRef } from 'react';
 import type { Prediction } from '../types';
 
@@ -34,8 +25,6 @@ export default function useImageClassifier(): ClassifierResult {
 
   /**
    * Load the MobileNet model.
-   * Downloads ~16MB of model weights on first load,
-   * then caches them in the browser.
    */
   const loadModel = useCallback(async () => {
     if (modelRef.current) {

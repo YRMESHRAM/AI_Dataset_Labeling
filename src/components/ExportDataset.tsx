@@ -55,7 +55,7 @@ export default function ExportDataset({ images, addNotification, darkMode }: Pro
   };
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.25rem 1rem 5rem' }}>
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.25rem 1rem 2.5rem' }}>
       <div className="animate-fadeIn" style={{ marginBottom: '1.5rem' }}>
         <h1 style={{ fontSize: 'clamp(1.3rem, 4vw, 2rem)', fontWeight: 800, marginBottom: '0.35rem' }}>
           <span className="gradient-text">Export Dataset</span>

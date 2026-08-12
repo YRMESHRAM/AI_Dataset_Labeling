@@ -84,7 +84,7 @@ export default function Dashboard({ navigateTo, images, darkMode }: Props) {
       style={{
         maxWidth: '1200px',
         margin: '0 auto',
-        padding: '1.5rem 1rem 5rem', /* Extra bottom for mobile tab bar */
+        padding: '1.5rem 1rem 2.5rem',
       }}
     >
       {/* Page title */}
