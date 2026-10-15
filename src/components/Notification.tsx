@@ -1,9 +1,3 @@
-/* ========================================
-   Toast Notification Component
-   Desktop: slides in from right
-   Mobile: slides down from top center
-   ======================================== */
-
 import { CheckCircle, XCircle, Info, AlertTriangle } from 'lucide-react';
 import type { Notification as NotificationType } from '../types';
 

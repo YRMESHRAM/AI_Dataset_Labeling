@@ -1,9 +1,3 @@
-/* ========================================
-   Landing Page Component
-   Fully responsive hero with animated
-   title, description and CTA button
-   ======================================== */
-
 import { Database, Sparkles, Layers, ArrowRight, Image, Tag, Download, Brain } from 'lucide-react';
 
 interface Props {

@@ -1,10 +1,3 @@
-/* ========================================
-   Header / Navigation Bar Component
-   Desktop: sticky top navbar with links
-   Mobile: compact top bar + fixed bottom
-          tab navigation for easy thumb reach
-   ======================================== */
-
 import { useState } from 'react';
 import {
   Sun,
